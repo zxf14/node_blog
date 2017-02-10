@@ -1,0 +1,27 @@
+{
+  "name": "movie_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch --progress --colors",
+    "dev": "node server.js",
+    "sass": "sass --watch public/assets/css/main.scss:public/assets/css/style.css",
+    "start": "run-p sass webpack dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "hbs": "^4.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.1",
+    "npm-run-all": "^4.0.1"
+  }
+}
